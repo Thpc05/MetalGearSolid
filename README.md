@@ -7,7 +7,7 @@ I - Quando uma interface está sobrecarregada é para dividir-la
 D - sempre depender da classe abstrata (maior nível possível)
 
 ld - Luis E.
-oi - theo P.
+oi - Theo P.
 s  - Luis A.
 
 comandos basicos
