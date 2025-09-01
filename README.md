@@ -5,3 +5,7 @@ O - fechado para modificações e aberto para features
 L - hereditariedade bem construida (não quebra quando troca os objetos)
 I - Quando uma interface está sobrecarregada é para dividir-la
 D - sempre depender da classe abstrata (maior nível possível)
+
+ld -
+oi-
+s
