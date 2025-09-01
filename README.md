@@ -6,9 +6,9 @@ L - hereditariedade bem construida (não quebra quando troca os objetos)
 I - Quando uma interface está sobrecarregada é para dividir-la
 D - sempre depender da classe abstrata (maior nível possível)
 
-ld -
-oi-
-s
+ld - Luis E.
+oi - theo P.
+s  - Luis A.
 
 comandos basicos
 git pull - pegar mudancas dos outros
