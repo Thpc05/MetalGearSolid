@@ -17,3 +17,6 @@ git status - ve se tu mudou algo
 git add . adicionar
 git commit -a ou git commit -m "Mensagem"
 git push
+
+
+![GraficoDeClasse](grafico_legal.png)
