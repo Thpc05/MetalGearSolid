@@ -1,7 +1,7 @@
 public class jogo implements Dados_Jogos {
     private int ID_jogo;
     private double  Preco;
-    private Marcador[] Marcadores = new Marcador[10]; // arreglo de 10 elementos
+    private Marcador[] Sring = new Marcador[10];
     private String Descricao;
     private String Nome;
 
