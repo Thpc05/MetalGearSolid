@@ -1,11 +1,11 @@
-public class jogo implements Dados_Jogos {
+public class Jogo implements Dados_Jogos {
     private int ID_Jogo;
     private int Preco;
     private String Marcador;
     private String Descricao;
     private String Nome;
 
-    public jogo(int ID_Jogo, String nome, int Preco) {
+    public Jogo(int ID_Jogo, String nome, int Preco) {
         this.ID_Jogo = ID_Jogo;
         this.Nome = nome;
         this.Preco = Preco;
