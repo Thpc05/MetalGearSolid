@@ -1,10 +1,8 @@
 public interface Usuarios {
     int getID_Usuario();
     String getNickname();
-    String getMail();
+    String getEmail();
     String getRegiao();
-    double getSaldo();
 
     void exibirDetalhes();
-    void adicionarSaldo(double valor);
 }

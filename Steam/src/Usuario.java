@@ -1,14 +1,14 @@
 public class Usuario implements Usuarios {
     private int ID_Usuario;
     private String nickname;
-    private String mail;
+    private String Email;
     private String regiao;
     private Carteira carteira; // associação com a classe Carteira
 
-    public Usuario(int ID_Usuario, String nickname, String mail, String regiao) {
+    public Usuario(int ID_Usuario, String nickname, String Email, String regiao) {
         this.ID_Usuario = ID_Usuario;
         this.nickname = nickname;
-        this.mail = mail;
+        this.Email = Email;
         this.regiao = regiao;
         this.carteira = new Carteira(); // cada usuário tem sua carteira ou wallet, whatever
     }
@@ -16,12 +16,7 @@ public class Usuario implements Usuarios {
     @Override
     public void exibirDetalhes() {
         System.out.printf("Usuário: %s | Email: %s | Região: %s | Saldo: %.2f%n",
-                nickname, mail, regiao, carteira.getSaldo());
-    }
-
-    @Override
-    public void adicionarSaldo(double valor) {
-        carteira.adicionarSaldo(valor);
+                nickname, Email, regiao, carteira.getSaldo());
     }
 
     // getters
@@ -30,7 +25,7 @@ public class Usuario implements Usuarios {
     @Override
     public String getNickname() { return nickname; }
     @Override
-    public String getMail() { return mail; }
+    public String getEmail() { return Email; }
     @Override
     public String getRegiao() { return regiao; }
     @Override

@@ -1,12 +1,12 @@
-public class Jogo implements Dados_Jogos {
-    private int ID_Jogo;
-    private int Preco;
-    private String Marcador;
+public class jogo implements Dados_Jogos {
+    private int ID_jogo;
+    private double  Preco;
+    private Marcador[] Marcadores = new Marcador[10]; // arreglo de 10 elementos
     private String Descricao;
     private String Nome;
 
-    public Jogo(int ID_Jogo, String nome, int Preco) {
-        this.ID_Jogo = ID_Jogo;
+    public jogo(int ID_jogo, String nome, int Preco) {
+        this.ID_jogo = ID_jogo;
         this.Nome = nome;
         this.Preco = Preco;
     }
@@ -16,11 +16,11 @@ public class Jogo implements Dados_Jogos {
     }
 
     public void setDescricao(String Descricao) {
-        this.Marcador = Descricao;
+        this.Descricao = Descricao;
     }
 
-    public void mudarNome(String nome) {
-        this.Nome = nome;
+    public void mudarNome(String Nome) {
+        this.Nome = Nome;
     }
 
     public void mudarPreco(int Preco) {
@@ -28,7 +28,7 @@ public class Jogo implements Dados_Jogos {
     }
 
     public int getID_Jogo() {
-        return ID_Jogo;
+        return ID_jogo;
     }
 
     public int getPreco() {
