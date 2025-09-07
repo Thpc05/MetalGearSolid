@@ -6,4 +6,5 @@ public interface Usuarios {
     double getSaldo();
 
     void exibirDetalhes();
+    void adicionarSaldo(double valor);
 }
