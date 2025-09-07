@@ -1,50 +1,57 @@
-public class jogo implements Dados_Jogos {
-    private int ID_jogo;
-    private double  Preco;
-    private Marcador[] Sring = new Marcador[10];
-    private String Descricao;
-    private String Nome;
+public class Jogo implements Dados_Jogos {
+    private int idJogo;
+    private int preco;
+    private String[] marcadores; // gêneros ou tags
+    private String descricao;
+    private String nome;
 
-    public jogo(int ID_jogo, String nome, int Preco) {
-        this.ID_jogo = ID_jogo;
-        this.Nome = nome;
-        this.Preco = Preco;
+    public Jogo(int idJogo, String nome, int preco) {
+        this.idJogo = idJogo;
+        this.nome = nome;
+        this.preco = preco;
+        this.marcadores = new String[0]; // inicia vazio
     }
 
-    public void setMarcador(String Marcador) {
-        this.Marcador = Marcador;
+    // ---- Setters ----
+    public void setMarcadores(String[] marcadores) {
+        this.marcadores = marcadores;
     }
 
-    public void setDescricao(String Descricao) {
-        this.Descricao = Descricao;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
-    public void mudarNome(String Nome) {
-        this.Nome = Nome;
+    public void mudarNome(String nome) {
+        this.nome = nome;
     }
 
-    public void mudarPreco(int Preco) {
-        this.Preco = Preco;
+    public void mudarPreco(int preco) {
+        this.preco = preco;
     }
 
+    // ---- Getters ----
+    @Override
     public int getID_Jogo() {
-        return ID_jogo;
+        return idJogo;
     }
 
+    @Override
     public int getPreco() {
-        return Preco;
+        return preco;
     }
 
-    public String getMarcador() {
-        return Marcador;
+    @Override
+    public String[] getMarcadores() {
+        return marcadores;
     }
 
+    @Override
     public String getDescricao() {
-        return Descricao;
+        return descricao;
     }
 
+    @Override
     public String getNome() {
-        return Nome;
+        return nome;
     }
-
 }

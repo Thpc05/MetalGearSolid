@@ -28,10 +28,9 @@ public class Usuario implements Usuarios {
     public String getEmail() { return Email; }
     @Override
     public String getRegiao() { return regiao; }
-    @Override
-    public double getSaldo() { return carteira.getSaldo(); }
 
     // acesso a carteira (usar no carrinho talvez)
+    @Override
     public Carteira getCarteira() {
         return carteira;
     }

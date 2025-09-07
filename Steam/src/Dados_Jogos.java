@@ -10,4 +10,8 @@ public interface Dados_Jogos {
     int getID_Jogo();
 
     int getPreco();
+
+    String[] getMarcadores();
+
+    String getDescricao();
 }

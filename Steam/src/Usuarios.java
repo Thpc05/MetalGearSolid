@@ -3,6 +3,6 @@ public interface Usuarios {
     String getNickname();
     String getEmail();
     String getRegiao();
-
     void exibirDetalhes();
+    Carteira getCarteira();
 }
