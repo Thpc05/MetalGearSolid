@@ -19,4 +19,4 @@ git commit -a ou git commit -m "Mensagem"
 git push
 
 
-![GraficoDeClasse](Diagrama.jpg)
+![GraficoDeClasse](Diagrama_Steam_v2.jpg)
